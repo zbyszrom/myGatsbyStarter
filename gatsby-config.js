@@ -4,7 +4,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `My Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `This is my barebone Gatsby starter. It ships with the main Gatsby configuration files. It is based on Gatsby default starter but is significally changed.  Streamlined and extended at the same time. No styling except basic css reset `,
     author: `zbyszrom`,
   },
   plugins: [
@@ -19,7 +19,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [],
+        fonts: [
+          {
+            family: `Inria Serif`,
+          },
+          {
+            family: `Tomorrow`,
+          },
+        ],
       },
     },
     "gatsby-plugin-styled-components",
